@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Agent's portfolio website.">
+    <title>Privacy Policy - Agent | Web Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN (optional utility classes) -->
+    <!-- Note: Remove this in production and use Tailwind CLI instead -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo" aria-label="Home">
+                    <i class="fas fa-code"></i>
+                    <span>Agent</span>
+                </a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <nav class="breadcrumbs container" aria-label="Breadcrumb">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active" aria-current="page">
+                    Privacy Policy
+                </li>
+            </ol>
+        </nav>
+
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Privacy Policy</h1>
+                <p class="page-hero__subtitle">Last updated: <span id="privacyDate"></span></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="legal-content">
+                    <p class="legal-content__intro">
+                        This Privacy Policy describes how your personal information is collected, 
+                        used, and shared when you visit or interact with this website.
+                    </p>
+
+                    <h2 class="legal-content__heading">Information We Collect</h2>
+                    <p>
+                        When you visit the site, we automatically collect certain information about 
+                        your device, including information about your web browser, IP address, time zone, 
+                        and some of the cookies that are installed on your device.
+                    </p>
+                    <p>
+                        Additionally, when you contact us through the contact form, we collect the 
+                        information you provide, including your name, email address, and message content.
+                    </p>
+
+                    <h2 class="legal-content__heading">How We Use Your Information</h2>
+                    <p>We use the information we collect to:</p>
+                    <ul>
+                        <li>Respond to your inquiries and provide customer support</li>
+                        <li>Send you newsletters and updates (if you subscribe)</li>
+                        <li>Improve our website and services</li>
+                        <li>Analyze website usage and trends</li>
+                    </ul>
+
+                    <h2 class="legal-content__heading">Sharing Your Information</h2>
+                    <p>
+                        We do not sell, trade, or rent your personal information to third parties. 
+                        We may share your information only in the following circumstances:
+                    </p>
+                    <ul>
+                        <li>To comply with legal obligations</li>
+                        <li>To protect our rights and safety</li>
+                        <li>With service providers who assist in operating our website</li>
+                    </ul>
+
+                    <h2 class="legal-content__heading">Cookies</h2>
+                    <p>
+                        We use cookies to enhance your experience on our website. You can choose to 
+                        disable cookies through your browser settings, though this may affect website functionality.
+                    </p>
+
+                    <h2 class="legal-content__heading">Your Rights</h2>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access the personal information we hold about you</li>
+                        <li>Request correction of inaccurate information</li>
+                        <li>Request deletion of your personal information</li>
+                        <li>Opt-out of marketing communications</li>
+                    </ul>
+
+                    <h2 class="legal-content__heading">Data Security</h2>
+                    <p>
+                        We implement appropriate security measures to protect your personal information. 
+                        However, no method of transmission over the Internet is 100% secure.
+                    </p>
+
+                    <h2 class="legal-content__heading">Changes to This Policy</h2>
+                    <p>
+                        We may update this Privacy Policy from time to time. We will notify you of 
+                        any changes by posting the new policy on this page and updating the "Last updated" date.
+                    </p>
+
+                    <h2 class="legal-content__heading">Contact Us</h2>
+                    <p>
+                        If you have questions about this Privacy Policy, please contact us at 
+                        <a href="mailto:voidthought.official@gmail.com">voidthought.official@gmail.com</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title">Agent</h3>
+                    <p class="footer__text">
+                        Freelance web developer creating modern, responsive websites.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Newsletter</h4>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <div class="form__group">
+                            <input type="email" id="newsletterEmail" class="form__input" placeholder="Your email" required aria-label="Email address">
+                            <button type="submit" class="btn btn--primary btn--small">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="form__error" id="newsletterError"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span id="currentYear"></span> Agent. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="scripts/main.js"></script>
+    <!-- Traffic Tracker (Local Database) -->
+    <script src="TRAFFIC/traffic-tracker.js"></script>
+</body>
+</html>
+

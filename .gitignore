@@ -1,0 +1,40 @@
+# Gitignore for Portfolio Website
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
+
+# Build Files (if using build tools)
+dist/
+build/
+*.min.js
+*.min.css
+
+# Environment Files
+.env
+.env.local
+
+# Node Modules (if using npm packages)
+node_modules/
+
+# Backup Files
+*.bak
+*.backup
+

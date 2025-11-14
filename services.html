@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional web development services including custom websites, UI/UX design, responsive development, and SEO optimization.">
+    <title>Services - Agent | Web Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN (optional utility classes) -->
+    <!-- Note: Remove this in production and use Tailwind CLI instead -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo" aria-label="Home">
+                    <i class="fas fa-code"></i>
+                    <span>Agent</span>
+                </a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link nav__link--active">Services</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <nav class="breadcrumbs container" aria-label="Breadcrumb">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active" aria-current="page">
+                    Services
+                </li>
+            </ol>
+        </nav>
+
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Services</h1>
+                <p class="page-hero__subtitle">Comprehensive web development solutions</p>
+            </div>
+        </section>
+
+        <!-- Services Tabs -->
+        <section class="section">
+            <div class="container">
+                <div class="tabs" id="servicesTabs">
+                    <div class="tabs__header" role="tablist">
+                        <button class="tabs__button tabs__button--active" data-tab="web-dev" role="tab" aria-selected="true" id="tab-web-dev">
+                            Web Development
+                        </button>
+                        <button class="tabs__button" data-tab="ui-ux" role="tab" aria-selected="false" id="tab-ui-ux">
+                            UI/UX Design
+                        </button>
+                        <button class="tabs__button" data-tab="responsive" role="tab" aria-selected="false" id="tab-responsive">
+                            Responsive Design
+                        </button>
+                        <button class="tabs__button" data-tab="seo" role="tab" aria-selected="false" id="tab-seo">
+                            SEO Optimization
+                        </button>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__panel tabs__panel--active" id="panel-web-dev" role="tabpanel" aria-labelledby="tab-web-dev">
+                            <div class="service-detail">
+                                <div class="service-detail__icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h2 class="service-detail__title">Web Development</h2>
+                                <p class="service-detail__text">
+                                    I create custom websites and web applications tailored to your business needs. 
+                                    Using modern technologies and best practices, I build fast, secure, and scalable 
+                                    solutions that deliver exceptional user experiences.
+                                </p>
+                                <h3 class="service-detail__subtitle">What's Included:</h3>
+                                <ul class="service-detail__list">
+                                    <li>Custom website development</li>
+                                    <li>Frontend and backend integration</li>
+                                    <li>Content Management System (CMS) setup</li>
+                                    <li>API integration</li>
+                                    <li>Performance optimization</li>
+                                    <li>Security best practices</li>
+                                    <li>Code documentation</li>
+                                    <li>Ongoing support and maintenance</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn--primary">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="tabs__panel" id="panel-ui-ux" role="tabpanel" aria-labelledby="tab-ui-ux">
+                            <div class="service-detail">
+                                <div class="service-detail__icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h2 class="service-detail__title">UI/UX Design</h2>
+                                <p class="service-detail__text">
+                                    User-centered design that focuses on creating intuitive and engaging digital 
+                                    experiences. I combine usability principles with modern design trends to 
+                                    create interfaces that users love to interact with.
+                                </p>
+                                <h3 class="service-detail__subtitle">What's Included:</h3>
+                                <ul class="service-detail__list">
+                                    <li>User research and analysis</li>
+                                    <li>Wireframing and prototyping</li>
+                                    <li>Visual design and branding</li>
+                                    <li>Interactive mockups</li>
+                                    <li>Design system creation</li>
+                                    <li>Usability testing</li>
+                                    <li>Design handoff documentation</li>
+                                    <li>Design iteration and refinement</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn--primary">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="tabs__panel" id="panel-responsive" role="tabpanel" aria-labelledby="tab-responsive">
+                            <div class="service-detail">
+                                <div class="service-detail__icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h2 class="service-detail__title">Responsive Design</h2>
+                                <p class="service-detail__text">
+                                    Mobile-first responsive design ensures your website looks and functions 
+                                    perfectly on all devices - from smartphones to large desktop screens. 
+                                    I use modern CSS techniques like Flexbox and Grid to create fluid layouts 
+                                    that adapt seamlessly.
+                                </p>
+                                <h3 class="service-detail__subtitle">What's Included:</h3>
+                                <ul class="service-detail__list">
+                                    <li>Mobile-first approach</li>
+                                    <li>Responsive layout design</li>
+                                    <li>Cross-device testing</li>
+                                    <li>Touch-friendly interfaces</li>
+                                    <li>Performance optimization for mobile</li>
+                                    <li>Progressive enhancement</li>
+                                    <li>Browser compatibility</li>
+                                    <li>Responsive image optimization</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn--primary">Get Started</a>
+                            </div>
+                        </div>
+                        <div class="tabs__panel" id="panel-seo" role="tabpanel" aria-labelledby="tab-seo">
+                            <div class="service-detail">
+                                <div class="service-detail__icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h2 class="service-detail__title">SEO Optimization</h2>
+                                <p class="service-detail__text">
+                                    Improve your search engine rankings and increase organic traffic with 
+                                    comprehensive SEO optimization. I implement technical SEO best practices 
+                                    and optimize your content to help you rank higher in search results.
+                                </p>
+                                <h3 class="service-detail__subtitle">What's Included:</h3>
+                                <ul class="service-detail__list">
+                                    <li>SEO audit and analysis</li>
+                                    <li>On-page optimization</li>
+                                    <li>Meta tags and structured data</li>
+                                    <li>Site speed optimization</li>
+                                    <li>Mobile-friendliness check</li>
+                                    <li>Content optimization</li>
+                                    <li>Google Analytics setup</li>
+                                    <li>SEO reporting and monitoring</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn--primary">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section section--faq">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Frequently Asked Questions</h2>
+                    <p class="section__subtitle">Common questions about my services</p>
+                </div>
+                <div class="faq" id="faq">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>How long does a typical project take?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>
+                                Project timelines vary depending on scope and complexity. A simple website 
+                                typically takes 2-4 weeks, while more complex applications can take 6-12 weeks. 
+                                I'll provide a detailed timeline during our initial consultation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Do you provide ongoing maintenance?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>
+                                Yes, I offer maintenance packages to keep your website updated, secure, and 
+                                running smoothly. This includes security updates, content updates, and 
+                                performance monitoring.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>What technologies do you use?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>
+                                I primarily work with HTML5, CSS3, JavaScript (ES6+), and modern frameworks 
+                                when needed. I choose the best technology stack based on your project requirements 
+                                and goals.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>Can you work with existing websites?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>
+                                Absolutely! I can help redesign, update, or enhance existing websites. 
+                                I'll analyze your current site and provide recommendations for improvements.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span>What is your pricing structure?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq__answer">
+                            <p>
+                                Pricing depends on project scope and requirements. I provide detailed quotes 
+                                after understanding your needs. Contact me for a free consultation and quote.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--cta">
+            <div class="container">
+                <div class="cta">
+                    <h2 class="cta__title">Ready to Start Your Project?</h2>
+                    <p class="cta__text">
+                        Let's discuss how I can help bring your vision to life.
+                    </p>
+                    <a href="contact.html" class="btn btn--primary btn--large">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title">Agent</h3>
+                    <p class="footer__text">
+                        Freelance web developer creating modern, responsive websites.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Newsletter</h4>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <div class="form__group">
+                            <input type="email" id="newsletterEmail" class="form__input" placeholder="Your email" required aria-label="Email address">
+                            <button type="submit" class="btn btn--primary btn--small">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="form__error" id="newsletterError"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span id="currentYear"></span> Agent. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+    <script type="module" src="scripts/main.js"></script>
+    <!-- Traffic Tracker (Local Database) -->
+    <script src="TRAFFIC/traffic-tracker.js"></script>
+</body>
+</html>
+

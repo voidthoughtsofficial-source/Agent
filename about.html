@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Agent, a freelance web developer with expertise in modern web technologies and responsive design.">
+    <title>About Me - Agent | Web Developer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN (optional utility classes) -->
+    <!-- Note: Remove this in production and use Tailwind CLI instead -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/utilities.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
+            <div class="nav__brand">
+                <a href="index.html" class="nav__logo" aria-label="Home">
+                    <i class="fas fa-code"></i>
+                    <span>Agent</span>
+                </a>
+            </div>
+            <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+                <span class="nav__toggle-icon"></span>
+            </button>
+            <ul class="nav__menu" id="navMenu">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="about.html" class="nav__link nav__link--active">About</a></li>
+                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs container" aria-label="Breadcrumb">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="index.html" class="breadcrumbs__link">Home</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active" aria-current="page">
+                    About
+                </li>
+            </ol>
+        </nav>
+
+        <!-- About Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">About Me</h1>
+                <p class="page-hero__subtitle">Get to know the person behind the code</p>
+            </div>
+        </section>
+
+        <!-- Bio Section -->
+        <section class="section">
+            <div class="container">
+                <div class="about-detailed">
+                    <div class="about-detailed__image">
+                        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QUl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" 
+                             alt="Agent" 
+                             loading="lazy"
+                             class="about-detailed__img">
+                    </div>
+                    <div class="about-detailed__content">
+                        <h2 class="section__title">Hello, I'm Agent</h2>
+                        <p class="about-detailed__text">
+                            I'm a passionate freelance web developer with over 5 years of experience 
+                            in creating modern, responsive websites and web applications. My journey 
+                            in web development started with a curiosity about how websites work, and 
+                            it has evolved into a career dedicated to crafting exceptional digital experiences.
+                        </p>
+                        <p class="about-detailed__text">
+                            I specialize in front-end development using HTML5, CSS3, and JavaScript (ES6+), 
+                            with a strong focus on accessibility, performance, and user experience. 
+                            My approach combines clean code practices with creative problem-solving to 
+                            deliver solutions that not only look great but also perform exceptionally well.
+                        </p>
+                        <p class="about-detailed__text">
+                            When I'm not coding, I enjoy contributing to open-source projects, 
+                            writing technical articles, and staying updated with the latest web 
+                            technologies and best practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section section--skills">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Skills & Expertise</h2>
+                    <p class="section__subtitle">Technologies I work with</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="skill-card__title">HTML5</h3>
+                        <div class="skill-card__level">
+                            <div class="skill-card__bar" style="width: 95%"></div>
+                        </div>
+                        <span class="skill-card__percent">95%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3 class="skill-card__title">CSS3</h3>
+                        <div class="skill-card__level">
+                            <div class="skill-card__bar" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-card__percent">90%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="skill-card__title">JavaScript</h3>
+                        <div class="skill-card__level">
+                            <div class="skill-card__bar" style="width: 88%"></div>
+                        </div>
+                        <span class="skill-card__percent">88%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="skill-card__title">React</h3>
+                        <div class="skill-card__level">
+                            <div class="skill-card__bar" style="width: 75%"></div>
+                        </div>
+                        <span class="skill-card__percent">75%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <i class="fab fa-node"></i>
+                        </div>
+                        <h3 class="skill-card__title">Node.js</h3>
+                        <div class="skill-card__level">
+                            <div class="skill-card__bar" style="width: 70%"></div>
+                        </div>
+                        <span class="skill-card__percent">70%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-card__icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h3 class="skill-card__title">Git</h3>
+                        <div class="skill-card__level">
+                            <div class="skill-card__bar" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-card__percent">85%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section section--experience">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Experience</h2>
+                    <p class="section__subtitle">My professional journey</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Freelance Web Developer</h3>
+                            <span class="timeline__period">2020 - Present</span>
+                            <p class="timeline__description">
+                                Working with clients worldwide to build custom websites and web applications. 
+                                Specializing in responsive design, performance optimization, and modern web technologies.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Frontend Developer</h3>
+                            <span class="timeline__period">2018 - 2020</span>
+                            <p class="timeline__description">
+                                Developed and maintained multiple client-facing web applications. 
+                                Collaborated with design and backend teams to deliver high-quality user experiences.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker"></div>
+                        <div class="timeline__content">
+                            <h3 class="timeline__title">Junior Web Developer</h3>
+                            <span class="timeline__period">2017 - 2018</span>
+                            <p class="timeline__description">
+                                Started my career building websites and learning modern web development practices with the help of AI. 
+                                Gained experience in HTML, CSS, JavaScript, and various frameworks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section--cta">
+            <div class="container">
+                <div class="cta">
+                    <h2 class="cta__title">Let's Work Together</h2>
+                    <p class="cta__text">
+                        Have a project in mind? I'd love to hear about it.
+                    </p>
+                    <a href="contact.html" class="btn btn--primary btn--large">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <h3 class="footer__title">Agent</h3>
+                    <p class="footer__text">
+                        Freelance web developer creating modern, responsive websites.
+                    </p>
+                    <div class="footer__social">
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Quick Links</h4>
+                    <ul class="footer__list">
+                        <li><a href="index.html" class="footer__link">Home</a></li>
+                        <li><a href="about.html" class="footer__link">About</a></li>
+                        <li><a href="services.html" class="footer__link">Services</a></li>
+                        <li><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="footer__link">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 class="footer__heading">Newsletter</h4>
+                    <form class="footer__form" id="newsletterForm" novalidate>
+                        <div class="form__group">
+                            <input type="email" id="newsletterEmail" class="form__input" placeholder="Your email" required aria-label="Email address">
+                            <button type="submit" class="btn btn--primary btn--small">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div class="form__error" id="newsletterError"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; <span id="currentYear"></span> Agent. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+    <script type="module" src="scripts/main.js"></script>
+    <!-- Traffic Tracker (Local Database) -->
+    <script src="TRAFFIC/traffic-tracker.js"></script>
+</body>
+</html>
+

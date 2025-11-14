@@ -1,0 +1,17 @@
+# Netlify Redirects File
+# This file handles URL redirects and rewrites
+
+# Redirect root to index.html (if needed)
+/ /index.html 200
+
+# Optional: Remove .html extension from URLs
+# Uncomment the following lines if you want clean URLs:
+# /about /about.html 200
+# /contact /contact.html 200
+# /services /services.html 200
+# /privacy /privacy.html 200
+# /terms /terms.html 200
+
+# Handle 404 errors - redirect to index.html with 200 status for SPA behavior
+/* /index.html 200
+
